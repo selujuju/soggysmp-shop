@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 0 0% 7%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+    --primary: 158 64% 52%;
+    --primary-foreground: 0 0% 7%;
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 0 0% 33%;
+    --accent: 263 70% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 0% / 0.08;
+    --input: 240 5.9% 90%;
+    --ring: 158 64% 52%;
+    --radius: 0.625rem;
+  }
+
+  body {
+    @apply bg-[#f4f4f5] text-[#111111];
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* 3D Extruded Title Styles */
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.hero-title-half {
+  position: relative;
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-weight: 500;
+  line-height: 0.85;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease-out;
+}
+
+.hero-title-half span {
+  display: block;
+}
+
+.hero-title-half .left {
+  color: #34d399;
+  text-shadow: 
+    1px 1px 0 #10b981, 2px 2px 0 #10b981, 3px 3px 0 #10b981, 
+    4px 4px 0 #10b981, 5px 5px 0 #10b981, 6px 6px 0 #059669, 
+    7px 7px 0 #059669, 8px 8px 0 #059669, 9px 9px 0 #059669, 
+    10px 10px 0 #059669, 11px 11px 0 #047857, 12px 12px 0 #047857, 
+    13px 13px 0 #047857, 14px 14px 0 #047857, 15px 15px 0 #047857, 
+    16px 16px 0 #065f46, 17px 17px 0 #065f46, 18px 18px 0 #065f46, 
+    19px 19px 0 #065f46, 20px 20px 0 #065f46, 21px 21px 0 #064e3b, 
+    22px 22px 0 #064e3b, 23px 23px 0 #064e3b, 24px 24px 0 #064e3b, 
+    25px 25px 0 #064e3b, 26px 26px 0 rgba(0, 0, 0, 0.1), 
+    30px 30px 0 rgba(0, 0, 0, 0.1), 35px 35px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-title-half .right {
+  color: #3b82f6;
+  text-shadow: 
+    1px 1px 0 #2563eb, 2px 2px 0 #2563eb, 3px 3px 0 #2563eb, 
+    4px 4px 0 #2563eb, 5px 5px 0 #2563eb, 6px 6px 0 #1d4ed8, 
+    7px 7px 0 #1d4ed8, 8px 8px 0 #1d4ed8, 9px 9px 0 #1d4ed8, 
+    10px 10px 0 #1d4ed8, 11px 11px 0 #1e40af, 12px 12px 0 #1e40af, 
+    13px 13px 0 #1e40af, 14px 14px 0 #1e40af, 15px 15px 0 #1e40af, 
+    16px 16px 0 #1e3a8a, 17px 17px 0 #1e3a8a, 18px 18px 0 #1e3a8a, 
+    19px 19px 0 #1e3a8a, 20px 20px 0 #1e3a8a, 21px 21px 0 #172554, 
+    22px 22px 0 #172554, 23px 23px 0 #172554, 24px 24px 0 #172554, 
+    25px 25px 0 #172554, 26px 26px 0 rgba(0, 0, 0, 0.1), 
+    30px 30px 0 rgba(0, 0, 0, 0.1), 35px 35px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Rank Cards */
+.rank-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  transform-origin: center bottom;
+  will-change: transform;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.rank-card[data-rank="vip"] {
+  border-top: 8px solid #34d399;
+}
+
+.rank-card[data-rank="mvp"] {
+  border-top: 8px solid #3b82f6;
+}
+
+.rank-card[data-rank="legend"] {
+  border-top: 8px solid #8b5cf6;
+}
+
+.rank-card[data-rank="god"] {
+  border-top: 8px solid #fbbf24;
+}
+
+/* Glassmorphism Navigation */
+.glass-nav {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Feature Card Hover */
+.feature-card {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Payment Modal */
+.payment-modal {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #34d399;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
