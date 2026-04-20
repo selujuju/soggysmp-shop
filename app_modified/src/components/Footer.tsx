@@ -47,27 +47,30 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          
           <div>
             <h4 className="font-semibold mb-4 text-white">Community</h4>
             <ul className="space-y-2">
               <li className="flex items-center gap-1 text-[#555555] text-sm">
-               <MessageCircle className="w-3 h-3" />
+                <MessageCircle className="w-3 h-3" />
                 <span>Discord :</span>
-                   <a 
-                      href="https://discord.gg/W3qRvyQJ" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                        className="hover:text-[#34d399] transition-colors"
-                      >
-    https://discord.gg/W3qRvyQJ
-  </a>
-</li>
+                <a
+                  href="https://discord.gg/W3qRvyQJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#34d399] transition-colors"
+                >
+                  https://discord.gg/W3qRvyQJ
+                </a>
+              </li>
+              <li>
                 <a href="#" className="text-[#555555] hover:text-[#34d399] transition-colors text-sm">
                   Forum
                 </a>
               </li>
             </ul>
           </div>
+          
           <div>
             <h4 className="font-semibold mb-4 text-white">Resources</h4>
             <ul className="space-y-2">
@@ -84,6 +87,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          
           <div>
             <h4 className="font-semibold mb-4 text-white">Support</h4>
             <ul className="space-y-2">
