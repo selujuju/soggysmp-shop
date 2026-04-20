@@ -51,7 +51,8 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-white">Community</h4>
             <ul className="space-y-2">
               <li>
-                
+                <a href="#" className="text-[#555555] hover:text-[#34d399] transition-colors text-sm flex items-center gap-1">
+                  <MessageCircle className="w-3 h-3" />
                   Discord : https://discord.gg/W3qRvyQJ
                 </a>
               </li>
