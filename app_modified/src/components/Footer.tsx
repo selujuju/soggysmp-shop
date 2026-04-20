@@ -2,7 +2,7 @@ import { Server, MessageCircle, BookOpen, LifeBuoy, ExternalLink } from 'lucide-
 
 export default function Footer() {
   const copyServerIP = () => {
-    navigator.clipboard.writeText('play.soggysmp.net');
+    navigator.clipboard.writeText('soggysmp.godlike.club');
     alert('IP copied to clipboard!');
   };
 
@@ -22,7 +22,7 @@ export default function Footer() {
             className="inline-flex items-center gap-3 bg-[#1a1a1a] hover:bg-[#222222] border border-[#333333] rounded-full px-8 py-4 transition-all duration-300 hover:scale-105 group"
           >
             <span className="font-['JetBrains_Mono'] text-xl md:text-2xl text-[#34d399]">
-              play.soggysmp.net
+              soggysmp.godlike.club
             </span>
             <ExternalLink className="w-5 h-5 text-[#555555] group-hover:text-white transition-colors" />
           </button>

@@ -23,9 +23,9 @@ const ranks: Rank[] = [
     icon: <Star className="w-8 h-8" />,
     perks: [
       'VIP prefix in chat',
-      'Access to /hat',
+      'Access to /top',
       '2 extra homes',
-      'Weekly VIP kit',
+      'daily VIP kit',
     ],
   },
   {
@@ -38,9 +38,9 @@ const ranks: Rank[] = [
     perks: [
       'All VIP perks',
       'MVP prefix in chat',
-      'Access to /fly',
+      'Access to /rename',
       '5 extra homes',
-      'Weekly MVP kit',
+      'daily MVP kit',
     ],
     popular: true,
   },
@@ -54,10 +54,10 @@ const ranks: Rank[] = [
     perks: [
       'All MVP perks',
       'LEGEND prefix in chat',
-      'Access to /god',
+      'Access to /vault',
       '10 extra homes',
-      'Weekly LEGEND kit',
-      'Access to exclusive events',
+      'daily LEGEND kit',
+      'Acces to a special salon in discord',
     ],
   },
   {
@@ -70,9 +70,9 @@ const ranks: Rank[] = [
     perks: [
       'All LEGEND perks',
       'GOD prefix in chat',
-      'Admin commands',
+      'you will be venerated',
       'Unlimited homes',
-      'Weekly GOD kit',
+      'daily GOD kit',
       'Exclusive Discord role',
       'Priority support',
     ],
