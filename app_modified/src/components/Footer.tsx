@@ -60,7 +60,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-[#34d399] transition-colors"
                 >
-                  https://discord.gg/W3qRvyQJ
+                  https://discord.gg/wQHbmjkh
                 </a>
               </li>
               <li>
