@@ -53,7 +53,7 @@ export default function Footer() {
               <li>
                 <a href="#" className="text-[#555555] hover:text-[#34d399] transition-colors text-sm flex items-center gap-1">
                   <MessageCircle className="w-3 h-3" />
-                  Discord
+                  Discord : https://discord.gg/W3qRvyQJ
                 </a>
               </li>
               <li>
