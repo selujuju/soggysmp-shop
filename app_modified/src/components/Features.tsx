@@ -3,8 +3,8 @@ import { Sparkles, Coins, Calendar, Sword, Users, Trophy } from 'lucide-react';
 const features = [
   {
     icon: <Sparkles className="w-8 h-8 text-[#34d399]" />,
-    title: 'Custom Enchantments',
-    description: 'Over 50 custom enchantments to elevate your gameplay and make your experience truly unique.',
+    title: 'Custom items',
+    description: 'Over 50 custom items to elevate your gameplay and make your experience truly unique.',
   },
   {
     icon: <Coins className="w-8 h-8 text-[#3b82f6]" />,
